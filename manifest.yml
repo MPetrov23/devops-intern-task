@@ -1,0 +1,10 @@
+---
+applications:
+  - name: intern-challenge-app
+    memory: 128M
+    buildpacks:
+      - java_buildpack
+    path: target/intern-challenge-app.jar
+    random-route: true
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'
